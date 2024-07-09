@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    user-select: none;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #101010;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    
+    .wrapper {
+        display: flex;
+        width: 100%;
+        max-width: 1256px;
+        flex-direction: column;
+        padding: 0 15px;
+
+        h3 {
+            // font-size: 38px;
+            // font-size: 22px;
+            font-size: calc(22px + 16 * (100vw - 360px) / 1640);
+        }
+    }
+}

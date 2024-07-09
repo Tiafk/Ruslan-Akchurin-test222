@@ -1,0 +1,105 @@
+.price-reduction {
+    display: flex;
+    flex-direction: column;
+    color: #101010;
+    padding: 80px 0;
+
+    .container-price {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            // font-size: 20px;
+            // font-size: 18px;
+            font-size: calc(18px + 10 * (100vw - 360px) / 1640);
+
+            margin-bottom: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            gap: 39px;
+
+
+            .box {
+                position: relative;
+                width: 100%;
+                max-width: 203px;
+                height: 118px;
+                border-radius: 0 0 4px 4px;
+                border-left: 1px solid #C8C8C8;
+                border-bottom: 1px solid #C8C8C8;
+                border-right: 0;
+                border-top: 0;
+                padding: 20px 0 0 16px;
+
+                .right-border {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    .line {
+                        position: relative;
+                        height: 58px;
+                        width: 50px;
+                        border-radius: 0 0 3.3px 0px;
+                        border-right: 1px solid #C8C8C8;
+
+                        .eclipse {
+                            position: absolute;
+                            top: -4px;
+                            right: -5px;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: #C8C8C8;
+                            z-index: 11;
+                        }
+                    }
+
+                }
+
+            
+
+                .percent {
+                    display: flex;
+                    align-items: center;
+                    font-size: 28px;
+                    margin-bottom: 8px;
+
+                    p {
+                        margin-right: 4px;
+                    }
+                }
+                
+                .green-percent {
+                    color: #5CB585;
+                }
+
+                .red-percent {
+                    color: #E31E25;
+                }
+
+                .text {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:704px) {
+    .price-reduction {
+        h3 {
+            text-align: center;
+        }
+    }
+}

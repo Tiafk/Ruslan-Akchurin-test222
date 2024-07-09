@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #101010;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.main .wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1256px;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.main .wrapper h3 {
+  font-size: calc(22px + 16 * (100vw - 360px) / 1640);
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.home .title-container {
+  padding-top: 40px;
+}
+.home .title-container .title {
+  font-size: calc(32px + 26 * (100vw - 360px) / 1640);
+  margin-bottom: 27px;
+}
+.home .title-container p {
+  font-size: calc(14px + 6 * (100vw - 360px) / 1640);
+  margin-bottom: 80px;
+}
+.home .navigation-container {
+  padding-bottom: 80px;
+}
+.home .navigation-container h2 {
+  font-size: calc(18px + 10 * (100vw - 360px) / 1640);
+  margin-bottom: 24px;
+}
+.home .navigation-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 25px;
+}
+.home .navigation-container ul li {
+  cursor: pointer;
+  list-style-type: none;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.home .navigation-container ul li p {
+  font-size: 13px;
+  padding: 10.5px 16px;
+}
+.home .navigation-container ul .active {
+  background-color: #EF5F31;
+}
+.home .navigation-container ul .active p {
+  color: #fff;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+  align-self: center;
+}
+.price h3 {
+  display: flex;
+  color: #101010;
+  margin-bottom: 80px;
+}
+.price .index-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 80px 0;
+}
+.price .index-container .background {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  top: 0;
+  min-width: 200%;
+  min-height: 100%;
+  background-color: #344066;
+  z-index: -1;
+}
+.price .index-container h2 {
+  margin-bottom: 44px;
+  font-size: calc(18px + 10 * (100vw - 360px) / 1640);
+}
+.price .index-container ul {
+  display: flex;
+  flex-direction: column;
+}
+.price .index-container ul .block {
+  display: flex;
+  width: 100%;
+  max-width: 1043px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.price .index-container ul .block:last-child {
+  max-width: 688px;
+  margin-bottom: 0;
+  margin-top: 28px;
+}
+.price .index-container ul .block li {
+  list-style-type: none;
+}
+.price .index-container ul .block li span {
+  font-size: calc(18px + 10 * (100vw - 360px) / 1640);
+  margin-bottom: 4px;
+}
+.price .index-container ul .block li p {
+  font-size: 16px;
+  color: #8ED5FF;
+}
+.price .index-container ul .line {
+  border: 0;
+  height: 1px;
+  background-color: #475273;
+}
+.price .inflation-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 80px 0;
+  color: #101010;
+}
+.price .inflation-container .background {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  top: 0;
+  min-width: 200%;
+  min-height: 100%;
+  background-color: #FBFBFB;
+  z-index: -1;
+}
+.price .inflation-container h3 {
+  align-self: start;
+  margin-bottom: 40px;
+}
+.price .inflation-container .container-graphs {
+  position: relative;
+  display: flex;
+}
+.price .inflation-container .container-graphs .line {
+  position: absolute;
+  display: flex;
+  bottom: 42px;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #C8C8C8;
+  z-index: 99;
+}
+.price .inflation-container .container-graphs .container-mouth {
+  width: 100%;
+  max-width: 250px;
+  align-self: end;
+  margin-bottom: 42px;
+}
+.price .inflation-container .container-graphs .container-mouth .mouth {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 12px;
+}
+.price .inflation-container .container-graphs .container-mouth .mouth .eclipce {
+  width: 10px;
+  height: 10px;
+  background-color: #E8E8E8;
+  border-radius: 20px;
+  border: 4px solid #344066;
+  margin-right: 8px;
+}
+.price .inflation-container .container-graphs .container-mouth .mouth:last-child {
+  margin-bottom: 0;
+}
+.price .inflation-container .container-graphs .container-mouth .mouth:last-child .eclipce {
+  border-color: #EF5F31;
+}
+.price .inflation-container .container-graphs .container-mouth .mouth p {
+  font-size: 13px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 935.5px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container {
+  display: flex;
+  justify-content: end;
+  align-self: end;
+  flex-direction: column;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container .graph-mouths {
+  display: flex;
+  gap: 16px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container .graph-mouths .graph-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  align-items: center;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container .graph-mouths .graph-wrapper p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container .graph-mouths .graph-wrapper .graph {
+  position: relative;
+  display: flex;
+  height: 103px;
+  width: 60px;
+  background-color: #ECEFFF;
+  border-top: 4px solid #344066;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container .graph-mouths .graph-wrapper:nth-child(2) .graph {
+  height: 100px;
+  background-color: #FAEBE7;
+  border-top: 4px solid #EF5F31;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container .text {
+  display: flex;
+  height: 34px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container:nth-child(2) .graph-wrapper .graph {
+  height: 99px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container:nth-child(2) .graph-wrapper:nth-child(2) .graph {
+  height: 100px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container:nth-child(3) .graph-wrapper .graph {
+  height: 100px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container:nth-child(3) .graph-wrapper:nth-child(2) .graph {
+  height: 100px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container:nth-child(4) .graph-wrapper .graph {
+  height: 109px;
+}
+.price .inflation-container .container-graphs .wrapper-graphs .container:nth-child(4) .graph-wrapper:nth-child(2) .graph {
+  height: 100px;
+}
+
+@media (max-width: 948px) {
+  .price .index-container ul .block {
+    display: flex;
+    gap: 30px;
+  }
+  .price .inflation-container {
+    justify-content: center;
+  }
+  .price .inflation-container h3 {
+    align-self: center;
+  }
+  .price .inflation-container .container-graphs {
+    flex-direction: column;
+  }
+  .price .inflation-container .container-graphs .line {
+    display: none;
+  }
+  .price .inflation-container .container-graphs .container-mouth {
+    width: auto;
+    align-self: center;
+  }
+  .price .inflation-container .container-graphs .wrapper-graphs {
+    gap: 25px;
+  }
+}
+@media (max-width: 419px) {
+  .price {
+    text-align: center;
+  }
+  .price .index-container ul .block {
+    justify-content: center;
+  }
+}
+@media (max-width: 355px) {
+  .price .inflation-container .container-graphs .wrapper-graphs {
+    justify-content: center;
+  }
+}
+.price-reduction {
+  display: flex;
+  flex-direction: column;
+  color: #101010;
+  padding: 80px 0;
+}
+.price-reduction .container-price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.price-reduction .container-price:last-child {
+  margin-bottom: 0;
+}
+.price-reduction .container-price h2 {
+  font-size: calc(18px + 10 * (100vw - 360px) / 1640);
+  margin-bottom: 24px;
+}
+.price-reduction .container-price .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 39px;
+}
+.price-reduction .container-price .container .box {
+  position: relative;
+  width: 100%;
+  max-width: 203px;
+  height: 118px;
+  border-radius: 0 0 4px 4px;
+  border-left: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8;
+  border-right: 0;
+  border-top: 0;
+  padding: 20px 0 0 16px;
+}
+.price-reduction .container-price .container .box .right-border {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.price-reduction .container-price .container .box .right-border .line {
+  position: relative;
+  height: 58px;
+  width: 50px;
+  border-radius: 0 0 3.3px 0px;
+  border-right: 1px solid #C8C8C8;
+}
+.price-reduction .container-price .container .box .right-border .line .eclipse {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #C8C8C8;
+  z-index: 11;
+}
+.price-reduction .container-price .container .box .percent {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.price-reduction .container-price .container .box .percent p {
+  margin-right: 4px;
+}
+.price-reduction .container-price .container .box .green-percent {
+  color: #5CB585;
+}
+.price-reduction .container-price .container .box .red-percent {
+  color: #E31E25;
+}
+.price-reduction .container-price .container .box .text {
+  font-size: 13px;
+}
+
+@media (max-width: 704px) {
+  .price-reduction h3 {
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
